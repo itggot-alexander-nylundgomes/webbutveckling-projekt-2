@@ -20,30 +20,26 @@ height: 60px;
 .meny{
     height: 40px;
     width: 40px;
-    margin: 10px;
-    
-    
 }
 
 
 .fullmeny{
-    z-index: 1000;
-    width: 0px;
+    z-index: 1;
     height: 100vh;
     background-color: #C7A611;
     position: fixed;
     left: -500px;
-    transition: ease 0.5s;
+    transition: 0.3s;
+    border: 3px white solid;
 }
 
 .activate{
     width: 200px;
     height: 100vh;
     position: fixed;
-    left: 0;
     background-color: #C7A611;
-    margin: 0;
-    
+    left: 0;
+
 }
 
 main{
@@ -51,7 +47,7 @@ height: 100%;
 width: 100%;
 display: grid;
 grid-template-columns: 1fr;
-grid-template-rows: 225px auto;
+grid-template-rows: 250px auto;
 }
 
 .bild_framsida{
@@ -62,6 +58,10 @@ grid-template-rows: 225px auto;
     box-sizing: border-box; 
     grid-column: span 1;
     grid-row: span 1;
+}
+
+.Shoppingsida{
+    outline: 4px dashed white;
 }
 
 .lowerheader{
@@ -107,7 +107,6 @@ h3{
     margin-top: 100%;
     margin-bottom: 0;
 }
-/* meny är för den som meny sticker ut */
 
 i.material-icons{
     font-size: 3rem;
@@ -129,4 +128,17 @@ margin-top: 25%;
     -moz-text-shadow: 0 0 2px #000;
     -webkit-text-shadow: 0 0 2px #000;
     color: #C7A611
+}
+
+h1, #links{
+margin-left: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
 }
