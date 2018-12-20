@@ -15,6 +15,7 @@ height: 60px;
     top: 0; 
     padding: 1px;
     margin: -1px;
+    z-index: 1000000;
 }
 
 .meny{
@@ -167,8 +168,11 @@ nav{
     z-index: 100;
 }
 
+ändra sticky postitionen baserat på header
 .side_nav_text{
     grid-area: textbox;
+    position: sticky;
+    top: 0;
 }
 
 .clothestxt{
