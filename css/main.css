@@ -1,15 +1,15 @@
 body{
-margin: 0;
+    margin: 0;
 }
 
 .wrapper{
-height: 100vh;
-width: 100vw;
-overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 header{
-height: 60px;
+    height: 60px;
     background-color: #C7A611;
     position: sticky;
     top: 0; 
@@ -41,23 +41,15 @@ height: 60px;
     position: fixed;
     background-color: #C7A611;
     left: 0;
-
+    
 }
 
-.main_shopping{
-height: 100%;
-width: 100%;
-display: grid;
-grid-template-columns: 50px auto;
-grid-template-rows: 250px 1fr;
-}
-
-.main_index{
+main{
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: 50px auto;
-    grid-template-rows: 250px 50px 1fr;
+    grid-template-rows: 250px 1fr;
 }
 
 .bild_framsida{
@@ -81,9 +73,8 @@ grid-template-rows: 250px 1fr;
     height: 50px;
     background-color: rgba(199, 166, 17, 0.6) ;
     margin: 10px 0 0 0;
-    grid-column: span 2;
-    grid-row: span 1;
-
+    
+    
 }
 
 h3{
@@ -128,12 +119,12 @@ i.material-icons{
 }
 
 .normal_text{
-font-family: 'Times New Roman', Times, serif;
-color: white;
-display: flex;
-justify-content: center;
-text-align: center;
-margin-top: 25%;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25%;
 }
 
 .price{
@@ -155,53 +146,63 @@ a{
 .lower_wrapper{
     height: 100%;
     width: 100%;
-
+    
 }
 
 nav{
-    height: 100%;
+    height: 100vh;
     background-color: rgba(255, 255, 255, 0.8);
     width: 50px;
-
+    
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40px auto;
+    grid-template-areas: 
+    "empty"
+    "textbox"
+    ;
+    
     transition: 0.3s;
     box-shadow: 10px 0px 90px -15px rgba(0,0,0,0.33);
-
+    
     z-index: 100;
+    
+}
+
+.side_nav_text{
+    grid-area: textbox;
 }
 
 .clothestxt{
     transform: rotate(90deg);
+    position: relative;
     transition: 0.3s;
-    font-size: 1.7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    font-size: 2rem;
 }
+
 .activate_clothes_menu{
     width: 150px;
+    
 }
 
 .activate_clothes_text{
     transform: rotate(0deg);
-    margin-top: 5px;
+    margin-top: -35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .boxes_shopping{
     width: 325px;
     height: 100%;
     margin-top: 0;
-  
+    
     grid-row: span 1;
     grid-column: span 1;
-
+    
     display: grid;
     grid-template-columns: 49% 49%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 2%;
-}
-
-.nav_offclick{
-    height: 100%;
-    width: 100%;
 }
