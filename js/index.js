@@ -18,8 +18,8 @@ function doStuff(event){
  }
 
  function prisbox(event){
-    let activate_filter_pop_box = document.querySelector("activate_filter_pop_box")
-    activate_filter_pop_box.classList.toggle(".activate_prisbox")
+    let activate_filter_pop_box = document.querySelector(".activate_filter_pop_box")
+    activate_filter_pop_box.classList.toggle("activate_prisbox")
  }
 
  
