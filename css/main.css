@@ -76,6 +76,7 @@ header{
     outline: 4px dashed white;
     grid-column: span 2;
     grid-row: span 1;
+    background-image: url(../img/Clothes_Shopping_Img.png)
 }
 
 .lowerheader{
@@ -104,6 +105,7 @@ h3{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    
     grid-gap: 10px;
     margin-top: 10px;
     
@@ -206,9 +208,8 @@ nav{
 .side_nav_text{
 grid-area: textbox;
 
-
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 75px 75px;
 grid-template-rows: 40px 40px 40px 40px;
 }
 
@@ -228,14 +229,14 @@ grid-template-rows: 40px 40px 40px 40px;
 .filter_pop_box{
     height: 0;
     width: 0;
-
+    
 }
 .activate_filter_pop_box{
-    height: 100%;
-    width: 100%;
-    background-color: blue;
+    border: black solid 2px;
     grid-column: span 1;
     grid-row: span 1;
+    height: 100%;
+    width: 100%
 }
 
 .activate_prisbox{
@@ -255,4 +256,109 @@ grid-template-rows: 40px 40px 40px 40px;
     grid-template-columns: 49% 49%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 2%;
+
+    grid-template-areas: 
+    "first second"
+    "third fourth"
+    "fifth sixth"
+    "seventh eigth"
+    ;
+}
+.first{
+    grid-area: second;
+}
+.second{
+    grid-area: fifth;
+}
+.third{grid-area: third;}
+
+.fourth{
+    grid-area: first;
+}
+.fifth{
+    grid-area: fourth;
+}
+.sixth{
+    grid-area: sixth;
+}
+.seventh{
+    grid-area: eigth;
+}
+.eigth{
+    grid-area: seventh;
+}
+
+
+
+
+.a_first{
+grid-area: first;
+}
+.a_second{
+grid-area: second;
+}
+
+.a_third{
+grid-area: third;
+}
+
+.a_fourth{
+grid-area: fourth;
+}
+
+.a_fifth{
+grid-area: fifth;
+}
+
+.a_sixth{
+grid-area: sixth;
+}
+
+.a_seventh{
+grid-area: seventh;
+}
+.a_eigth{
+grid-area: eigth;
+}
+
+
+i.down_arrow{
+    font-size: 0em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 4px;
+    position: relative;
+    transform: rotate(90deg);
+    transition: 0.2s
+}
+
+i.a_down_arrow{
+font-size: 2em;
+}
+
+i.activate_down_arrow{
+    transform: rotate(0deg);
+    margin-left: 35px;
+    font-size: 2em;
+}
+.lågt_högt{
+    margin-left: 400px;
+}
+
+.activate_lågt_högt{
+    font-size: 1.5em;
+    border: #000 solid 1px;
+    margin-top: 0px;
+    margin-left: 0;
+}
+
+.högt_lågt{
+    margin-left: 400px;
+    margin-top: -10px;
+}
+.activate_högt_lågt{
+    margin-left: 0;
+    border: #000 solid 1px;
+    font-size: 1.5em;
 }
