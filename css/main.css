@@ -76,7 +76,7 @@ header{
     outline: 4px dashed white;
     grid-column: span 2;
     grid-row: span 1;
-    background-image: url(../img/Clothes_Shopping_Img.png)
+    background-image: url("../img/Clothes_Shopping_Img.png")
 }
 
 .lowerheader{
@@ -227,8 +227,7 @@ grid-template-rows: 40px 40px 40px 40px;
 }
 
 .filter_pop_box{
-    height: 0;
-    width: 0;
+    margin-left: 1000px;
     
 }
 .activate_filter_pop_box{
@@ -236,7 +235,8 @@ grid-template-rows: 40px 40px 40px 40px;
     grid-column: span 1;
     grid-row: span 1;
     height: 100%;
-    width: 100%
+    width: 100%;
+    margin-left: 0;
 }
 
 .activate_prisbox{
@@ -264,32 +264,6 @@ grid-template-rows: 40px 40px 40px 40px;
     "seventh eigth"
     ;
 }
-.first{
-    grid-area: second;
-}
-.second{
-    grid-area: fifth;
-}
-.third{grid-area: third;}
-
-.fourth{
-    grid-area: first;
-}
-.fifth{
-    grid-area: fourth;
-}
-.sixth{
-    grid-area: sixth;
-}
-.seventh{
-    grid-area: eigth;
-}
-.eigth{
-    grid-area: seventh;
-}
-
-
-
 
 .a_first{
 grid-area: first;
@@ -351,6 +325,7 @@ i.activate_down_arrow{
     border: #000 solid 1px;
     margin-top: 0px;
     margin-left: 0;
+    
 }
 
 .högt_lågt{
@@ -361,4 +336,19 @@ i.activate_down_arrow{
     margin-left: 0;
     border: #000 solid 1px;
     font-size: 1.5em;
+
+}
+
+@media only screen and (min-device-width: 800px)
+{
+    .bild_framsida{
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../img/400H.png");
+
+    }
+    .main_index{
+        grid-template-rows: 400px 50px 1fr;
+        grid-template-columns: 1fr;
+    }
 }
