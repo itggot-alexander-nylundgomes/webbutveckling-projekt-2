@@ -36,6 +36,58 @@ function doStuff(event){
     högt_lågt.classList.toggle("activate_högt_lågt")
  }
 
+ function reset(event){
+    let first = document.querySelector(".first");
+first.classList.remove("a_first");
+
+let second = document.querySelector(".second");
+second.classList.remove("a_second");
+
+let third = document.querySelector(".third");
+third.classList.remove("a_third");
+
+let fourth = document.querySelector(".fourth");
+fourth.classList.remove("a_fourth");
+
+let fifth = document.querySelector(".fifth");
+fifth.classList.remove("a_fifth");
+
+let sixth = document.querySelector(".sixth");
+sixth.classList.remove("a_sixth");
+
+let seventh = document.querySelector(".seventh");
+seventh.classList.remove("a_seventh");
+
+let eigth = document.querySelector(".eigth");
+eigth.classList.remove("a_eigth");
+ }
+
+function reset2(event){
+let first = document.querySelector(".first")
+ first.classList.remove("a_eigth")
+ 
+ let second = document.querySelector(".second")
+ second.classList.remove("a_seventh")
+ 
+ let third = document.querySelector(".third")
+ third.classList.remove("a_sixth")
+ 
+ let fourth = document.querySelector(".fourth")
+ fourth.classList.remove("a_fifth")
+
+ let fifth = document.querySelector(".fifth")
+ fifth.classList.remove("a_fourth")
+
+ let sixth = document.querySelector(".sixth")
+ sixth.classList.remove("a_third")
+
+ let seventh = document.querySelector(".seventh")
+ seventh.classList.remove("a_second")
+
+ let eigth = document.querySelector(".eigth")
+ eigth.classList.remove("a_first")
+ }
+
  function low2high(event){
  
     let first = document.querySelector(".first")
@@ -61,4 +113,31 @@ function doStuff(event){
 
  let eigth = document.querySelector(".eigth")
  eigth.classList.toggle("a_eigth")
+ }
+
+ function high2low(event){
+ 
+    let first = document.querySelector(".first")
+ first.classList.toggle("a_eigth")
+ 
+ let second = document.querySelector(".second")
+ second.classList.toggle("a_seventh")
+ 
+ let third = document.querySelector(".third")
+ third.classList.toggle("a_sixth")
+ 
+ let fourth = document.querySelector(".fourth")
+ fourth.classList.toggle("a_fifth")
+
+ let fifth = document.querySelector(".fifth")
+ fifth.classList.toggle("a_fourth")
+
+ let sixth = document.querySelector(".sixth")
+ sixth.classList.toggle("a_third")
+
+ let seventh = document.querySelector(".seventh")
+ seventh.classList.toggle("a_second")
+
+ let eigth = document.querySelector(".eigth")
+ eigth.classList.toggle("a_first")
  }
