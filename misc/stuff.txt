@@ -1,0 +1,26 @@
+let first = document.querySelector(".first")
+ first.classList.toggle("a_second")
+ 
+ let second = document.querySelector(".second")
+ second.classList.toggle("a_fifth")
+ 
+ let third = document.querySelector(".third")
+ third.classList.toggle("a_third")
+ 
+ let fourth = document.querySelector(".fourth")
+ fourth.classList.toggle("a_first")
+
+ let fifth = document.querySelector(".fifth")
+ fifth.classList.toggle("a_fourth")
+
+ let sixth = document.querySelector(".sixth")
+ sixth.classList.toggle("a_seventh")
+
+ let seventh = document.querySelector(".seventh")
+ seventh.classList.toggle("a_sixth")
+
+ let eigth = document.querySelector(".eigth")
+ eigth.classList.toggle("a_eigth")
+
+ let lågt_högt = document.querySelector(".lågt_högt")
+ lågt_högt.classList.toggle("onclick_button")
