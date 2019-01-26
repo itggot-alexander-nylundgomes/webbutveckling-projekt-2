@@ -440,11 +440,24 @@ i.activate_down_arrow{
         background-image: url(../img/bakgrundHomeCUT.jpg)
     }
 
+    .One{
+        background-repeat: no-repeat;
+        background-image: url(../img/FIRSTSHIRTPC.png) !important;
+    }
+
+    .Two{
+        background-image: url(../img/SECONDSHIRTPC.png) !important;
+    }
+
+    .Third{
+        background-image: url(../img/THIRDSHIRTPC.png) !important;
+    }
     .box{
         background-repeat: no-repeat;
         background-image: url(../img/shirt4pc.png);
 
     }
+
 
     .price{
         font-size: 4em;
