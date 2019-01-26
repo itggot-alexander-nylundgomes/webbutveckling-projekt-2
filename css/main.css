@@ -103,18 +103,20 @@ h3{
     grid-column: span 1;
     grid-row: span 1;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
     
     grid-gap: 10px;
     margin-top: 10px;
     
 }
 .box{
+    background-color: rgb(208, 206, 202);
     grid-column: span 1;
     grid-row: span 1;
     border: 3px solid black;
-    background-image: url("../img/Black\ shirt\ template.png")
+    background-image: url("../img/shirt4mobile.png");
+    background-repeat: no-repeat;
 }
 
 .boxmeny{
@@ -145,7 +147,10 @@ i.burgarmeny{
     text-shadow: 0 0 2px #000; 
     -moz-text-shadow: 0 0 2px #000;
     -webkit-text-shadow: 0 0 2px #000;
-    color: #C7A611
+    color: #C7A611;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul{
@@ -170,7 +175,7 @@ nav{
     
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 40px auto;
+    grid-template-rows: 50px auto;
     grid-template-areas: 
     "clothestxt"
     "textbox"
@@ -227,7 +232,7 @@ grid-template-rows: 40px 40px 40px 40px;
 }
 
 .filter_pop_box{
-    margin-left: 1000px;
+    margin-left: 3000px;
     
 }
 .activate_filter_pop_box{
@@ -248,9 +253,6 @@ grid-template-rows: 40px 40px 40px 40px;
     width: 325px;
     height: 100%;
     margin-top: 0;
-    
-    grid-row: span 1;
-    grid-column: span 1;
     
     display: grid;
     grid-template-columns: 49% 49%;
@@ -317,7 +319,7 @@ i.activate_down_arrow{
     font-size: 2em;
 }
 .lågt_högt{
-    margin-left: 400px;
+    margin-left: 3000px;
 }
 
 .activate_lågt_högt{
@@ -329,7 +331,7 @@ i.activate_down_arrow{
 }
 
 .högt_lågt{
-    margin-left: 400px;
+    margin-left: 3000px;
     margin-top: -10px;
 }
 .activate_högt_lågt{
@@ -342,13 +344,101 @@ i.activate_down_arrow{
 @media only screen and (min-device-width: 800px)
 {
     .bild_framsida{
-        width: 100vw;
-        height: 100vh;
-        background-image: url("../img/400H.png");
+        grid-column: span 1;
+        grid-row: span 1;
+        height: 400px;
+        background-image: none;
+        border: none;
+        outline: none;
+        width: 700px;
+        margin-left: 610px;
 
+    }
+    
+    .framsida_pc{
+        background-image: url("../img/pexels-photo-717988.jpeg"); 
+        background-repeat: no-repeat;
+        border: 4px solid #C7A611;
+        outline: 4px dotted #fff;
+        outline-offset: -40px;
+        height: 100%;
+        width: 100%;
     }
     .main_index{
         grid-template-rows: 400px 50px 1fr;
         grid-template-columns: 1fr;
+    }
+    nav{
+        margin-left: 0;
+        width: 100px;
+        grid-row: span 1;
+        grid-column: span 1;
+
+    }
+    .pc_box{
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: span 1;
+        grid-row: span 1;
+        margin-top: 8px;    }
+    .clothestxt{
+        margin: 70px 0 0 0;
+    }
+    .side_nav_text{
+        margin-top: 70px;
+    }
+    .activate_filter_pop_box{
+        border: none;
+        outline: 2px solid black;
+        outline-offset: -2px
+
+    }
+    .main_shopping{
+        grid-template-rows: 400px 1fr;
+        grid-template-columns: 100px 1fr;
+       
+    }
+    .Shoppingsida{
+        outline: 4px dashed white;
+        background-image: url(../img/Clothes_Shopping_Img.png);
+        border: 4px solid #C7A611;
+    }
+    .bakgrund2shopping{
+        grid-column: span 2;
+        grid-row: span 2;
+        z-index: 0;
+        background-image: url(../img/bakgrundShopping.jpeg);
+        background-repeat: no-repeat;
+    }
+
+    .box{
+        background-repeat: no-repeat;
+        background-image: url(../img/shirt4pc.png);
+    }
+
+    .price{
+        font-size: 4em;
+    }
+
+    .boxmeny{
+        height: 80px;;
+    }
+
+    
+
+    .boxes_shopping{
+        width: 1820px;
+        margin-left: -100px;
+        grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 2%;
+
+        grid-template-areas: 
+        "first second third fourth"
+        "fifth sixth seventh eigth"
+        ;
     }
 }
