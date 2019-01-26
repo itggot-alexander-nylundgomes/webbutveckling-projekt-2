@@ -52,22 +52,35 @@ header{
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 50px auto;
+    grid-template-columns: 50px 1fr;
     grid-template-rows: 250px 1fr;
+    grid-row-gap: 10px;
+}
+
+.förlåtmig_david{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.bakgrund2shopping{
+   display: none;
 }
 
 .main_index{
+    display: grid;
     grid-template-rows: 250px 50px 1fr;
     grid-template-columns: 1fr;
 }
+
 
 .bild_framsida{
     background-image: url("../img/bild 1 beskärd rätt.png");
     outline: 4px dotted #fff;
     outline-offset: -40px;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
     border: 4px solid #C7A611; 
-    grid-column: span 1;
+    grid-column: span 2;
     grid-row: span 1;
     background-repeat: no-repeat;
 }
@@ -103,8 +116,8 @@ h3{
     grid-column: span 1;
     grid-row: span 1;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     
     grid-gap: 10px;
     margin-top: 10px;
@@ -344,14 +357,13 @@ i.activate_down_arrow{
 @media only screen and (min-device-width: 800px)
 {
     .bild_framsida{
-        grid-column: span 1;
-        grid-row: span 1;
         height: 400px;
         background-image: none;
         border: none;
         outline: none;
         width: 700px;
         margin-left: 610px;
+        margin-top: 25px;
 
     }
     
@@ -363,9 +375,10 @@ i.activate_down_arrow{
         outline-offset: -40px;
         height: 100%;
         width: 100%;
+        box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.75);
     }
     .main_index{
-        grid-template-rows: 400px 50px 1fr;
+        grid-template-rows: 450px 50px 1fr;
         grid-template-columns: 1fr;
     }
     nav{
@@ -375,15 +388,20 @@ i.activate_down_arrow{
         grid-column: span 1;
 
     }
+
+    .förlåtmig_david{
+        display: none;
+    }
     .pc_box{
-        width: 100vw;
+        width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         grid-column: span 1;
         grid-row: span 1;
-        margin-top: 8px;    }
+        margin-top: 8px;    
+    }
     .clothestxt{
         margin: 70px 0 0 0;
     }
@@ -397,7 +415,7 @@ i.activate_down_arrow{
 
     }
     .main_shopping{
-        grid-template-rows: 400px 1fr;
+        grid-template-rows: 450px 1fr;
         grid-template-columns: 100px 1fr;
        
     }
@@ -405,18 +423,27 @@ i.activate_down_arrow{
         outline: 4px dashed white;
         background-image: url(../img/Clothes_Shopping_Img.png);
         border: 4px solid #C7A611;
+        margin-top: 25px;
+        box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.75);
     }
+
     .bakgrund2shopping{
+        display: block;
         grid-column: span 2;
         grid-row: span 2;
         z-index: 0;
-        background-image: url(../img/bakgrundShopping.jpeg);
+        background-image: url(../img/true_bakgrundsShopping.jpg);
         background-repeat: no-repeat;
+    }
+
+    .bild_bakgrund_home{
+        background-image: url(../img/bakgrundHomeCUT.jpg)
     }
 
     .box{
         background-repeat: no-repeat;
         background-image: url(../img/shirt4pc.png);
+
     }
 
     .price{
@@ -424,21 +451,43 @@ i.activate_down_arrow{
     }
 
     .boxmeny{
-        height: 80px;;
+        height: 80px;
     }
 
     
 
     .boxes_shopping{
-        width: 1820px;
-        margin-left: -100px;
-        grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
+        width: 1796px;
+        margin-left: -1px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-gap: 2%;
+        grid-gap: 10px;
 
         grid-template-areas: 
         "first second third fourth"
         "fifth sixth seventh eigth"
         ;
+    }
+
+    .menytext:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+        font-size: 2.5em;
+        transition: 0.4s;
+    }
+
+    .menytext{
+        transition: 0.4s;
+    }
+
+    .lowerheader{
+        margin: 0;
+    }
+
+    .boxes{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    
+    grid-gap: 10px;
+    margin-top: 10px;
     }
 }
