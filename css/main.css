@@ -354,6 +354,8 @@ i.activate_down_arrow{
 
 }
 
+
+
 @media only screen and (min-device-width: 800px)
 {
     .bild_framsida{
@@ -440,18 +442,26 @@ i.activate_down_arrow{
         background-image: url(../img/bakgrundHomeCUT.jpg)
     }
 
-    .One{
-        background-repeat: no-repeat;
+    .OneShirt{
         background-image: url(../img/FIRSTSHIRTPC.png) !important;
     }
 
-    .Two{
+    .TwoShirt{
         background-image: url(../img/SECONDSHIRTPC.png) !important;
     }
 
-    .Third{
+    .ThirdShirt{
         background-image: url(../img/THIRDSHIRTPC.png) !important;
     }
+
+    .FourthShirt{
+        background-image: url(../img/FOURTHSHIRTPC.png) !important;
+    }
+
+    .FifthShirt{
+        background-image: url(../img/FIFTHSHIRTPC.png) !important;
+    }
+
     .box{
         background-repeat: no-repeat;
         background-image: url(../img/shirt4pc.png);
